@@ -1,0 +1,7 @@
+In a Java project, linting could be handled with Checkstyle, Spotbugs, or Sonarlint. Testing could be handled with Selenium, JUnit, JBehave, or TestNG. Building could be handled with Gradle or Maven.
+
+Alternatives to Github Actions and Jenkins include GitLab CI, CircleCI, Buddy, and Codeship, among many others.
+
+Jenkins is popular for Java developers, but its flexibility makes it sometimes difficult to set up. For this reason, a single small or medium sized application might be better with a cloud-based CI environment. The cost is likely lower, and for most "normal" use cases, configuration is likely simpler. For a larger organization with more complicated CI requirements or with multiple large apps, running on self-hosted hardware might be a better option. Especially in cases with specific hardware requirements, like the need for a GPU to run tests, running on a self-hosted server is likely the more economical and preferred CI solution.
+
+In this case with a small team of six devs actively developing the application, a cloud-based CI environment would likely make the most sense. It would be faster and simpler to setup than a self-hosted i.e. Jenkins environment, and could allow the app to reach production quickly and reliably with minimal configuration troubles.
