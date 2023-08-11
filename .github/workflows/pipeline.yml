@@ -36,7 +36,7 @@ jobs:
         run: flyctl deploy --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-      - name: Pipeline success
+      - name: Deployment success
         uses: rjstone/discord-webhook-notify@v1
         if: succes()
         with:
@@ -48,7 +48,7 @@ jobs:
         if: failure()
         with:
           severity: error
-          details: Build error
+          details: Build failure
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
 
