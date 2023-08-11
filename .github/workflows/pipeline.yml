@@ -38,7 +38,7 @@ jobs:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
       - name: Deployment success
         uses: rjstone/discord-webhook-notify@v1
-        if: succes()
+        if: success()
         with:
           severity: info
           details: Deployment successful
